@@ -11,6 +11,7 @@ import profile_icon from '../../assets/jack.png'
 const Navbar = ({ setSidebar }) => {
   return (
     <nav className='flex-div'>
+
       <div className='nav-left flex-div' >
 
         <img className='menu_icon' onClick={() => setSidebar(prev => prev === false ? true : false)} src={menu_icon} alt="" />
@@ -32,6 +33,7 @@ const Navbar = ({ setSidebar }) => {
 
       <div className="nav-right flex-div">
         <img src={upload_icon} alt="" />
+
         <img src={more_icon} alt="" />
         <img src={notification_icon} alt="" />
         <img src={profile_icon} alt="" className='user-icon' />
